@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int i, l;
+    int cc=0;
+    int vc=0, ci=0, ca=0, ce=0, co=0, cu=0;
+    int len;
+    
+    char s[100];
+    printf("enter a string");
+    scanf("%s", s);
+    len=strlen(s);
+    for(i=0; i<len; i++){
+    if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')
+    vc=vc+1;
+    else
+    cc=cc+1;
+}
+printf("cc=%d", cc);
+printf("vc=%d", vc);
+ for(i=0; i<len; i++)
+ {
+     if(s[i]=='i')
+     ci=ci+1;
+     
+     if(s[i]=='a')
+     ca=ca+1;
+     
+     if(s[i]=='e')
+     ce=ce+1;
+     
+     if(s[i]=='o')
+     co=co+1;
+     
+     if(s[i]=='u')
+     cu=cu+1;
+     
+     
+    
+ }
+printf("total a=%d\n", ca);
+printf("total e=%d\n", ce);
+printf("total i=%d\n", ci);
+printf("total o=%d\n", co);
+printf("total u=%d\n", cu);
+
+return 0;
+}
