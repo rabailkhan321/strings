@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+
+    char s1[40];
+    char s2[30];
+    int l1, l2;
+    printf("enter string");
+    gets(s1);
+    printf("enter string 2");
+    gets(s2);
+    l1=strlen(s1);
+    l2=strlen(s2);
+    for(int i=0; i<l2; i++)
+    {
+
+        s1[l1+i]=s2[i];
+    }
+    printf("the string after concatination is %s", s1);
+
+}
