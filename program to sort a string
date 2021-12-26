@@ -1,0 +1,35 @@
+//program to sort a string
+
+#include<stdio.h>
+#include<string.h>
+ sort_string(char s[]);
+int main()
+{
+    int s[30];
+    printf("enter a string");
+    gets(s);
+    
+    sort_string(s);
+    
+}
+ sort_string(char s[])\
+ {
+     int i, j;
+     int l1;
+     l1=strlen(s);
+     char temp;
+     for(i=0; i<l1; i++)
+     {
+         for(j=i+1; j<l1; j++)
+         {
+             if(s[i]> s[j])
+             
+             {
+                 temp=s[i];
+                 s[i]=s[j];
+                 s[j]=temp;
+             }
+         }
+     }
+     printf("the sorted strinng is %s", s);
+ }
